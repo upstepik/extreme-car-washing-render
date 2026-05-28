@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: extreme-car-washing
+    runtime: static
+    buildCommand: bash build-render.sh
+    staticPublishPath: public
+    envVars:
+      - key: SKIP_INSTALL_DEPS
+        value: "true"
